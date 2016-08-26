@@ -164,17 +164,17 @@ Finalement une publication vierge se présente de la façon suivante:
 
 ![](https://github.com/DenisSalem/VenC/blob/master/doc/newEntryFR.png?raw=true "")
 
-On a donc trois champs à compléter, ou pas.
+On a donc quatre champs à compléter, ou pas.
 
-- __authors__ : C'est la liste des auteurs de la publication, séparés par une virgule. Pas exemple _Denis Salem, Benjamin Bayard, Richard Stallman_.
+- __authors__ : C'est la liste des auteurs de la publication, séparés par une virgule. Par exemple _Denis Salem, Benjamin Bayard, Richard Stallman_.
 - __categories__ : C'est la liste des categories de la publication, séparées par une virgule. Vous pouvez également avoir des sous categories pour une publication qui définiront ensuite un arbre de categories. Pour définir une sous catégories il faut séparer la categorie parente de la categorie fille par ' > '. Ce procédé peut-être répété autant de fois que nécessaire. Par exemple _Metal > Copper, Metal > Steel > Properties, Materials_.
 - __entry_name__ : C'est le nom de votre publication tel que vous l'avez définit au moment de créer la publication avec `venc -ne <titre de la publication>`.
 - __tags__ : C'est la liste des mots clefs de la publication, séparées par une virgule. Par exemple _Libre, Open-source, Linux_.
 
 
-Les deux parties sont séparées par trois tirets (ceux du six). Sur la capture d'écran la partie contenant la syntaxe Markdown est vide. On parle bien d'une publication vierge.
+Les deux parties sont séparées par trois tirets (the ones of the six). Sur la capture d'écran la partie contenant la syntax Markdown est vide. On parle bien d'une publication vierge.
 
-Notons également que le nom de fichier d'une publication est formaté d'une façon particulière.
+Notons également que le nom de fichier d'une publication est formatté d'une façon particulière.
 
 `<id>__<mois>-<jour>-<année>-<heure>-<minute>__<titre>`
 
@@ -224,8 +224,8 @@ _Les motifs pouvant être reconnus dépendent du contexte dans lequel ils sont t
 
 Les motifs sont définis de la façon suivante dans VenC
 
-* Chaque motifs commence par '.:'
-* Chaque motifs se termine par ':.'
+* Chaque motif commence par '.:'
+* Chaque motif se termine par ':.'
 * Le ou les séparateurs à l'intérieur d'un motif sont représentés par '::'
 
 Un motif est une fonction pouvant prendre des paramètres. L'objectif est de remplacer un motif par une chaine de caractères formatée. Typiquement, les motifs
@@ -317,7 +317,7 @@ Plus bas on désigne par "_feuille_" l'extrémité d'une branche, une "_branche 
 
 * __EntryCategories__ : La liste des categories (branche complète) de la publication courante. Se présente sous la forme de listes imbriquées. Il y a plusieurs items disponibles pour une itération courante; __{0[relativeOrigin]}__, __{0[categoryPath]}__ et __{0[item]}__. Respectivement le chemin relatif de la page courante vers la racine du blog, le chemin relatif vers la sous-categorie courante et le nom de la sous-categorie courante.
 * __EntryCategoriesTop__ : La liste des categories (feuilles) de la publication courante. Il y a plusieurs items disponibles pour une itération courante; __{0[relativeOrigin]}__, __{0[categoryLeaf]}__ et __{0[categoryLeafUrl]}__. Respectivement le chemin relatif de la page courante vers la racine du blog, le nom de la categorie feuille et l'url vers la categorie feuille.
-* __BlogCategories__ : La liste des categories (branche complète) du blog. Se présente sous la forme de listes imbriquées. Il y a plusieurs items disponibles pour une itération courante ; __{0[relativeOrigin]}__, __{0[categoryPath]}__ et __{0[item]}__. Respectivement le chemin relatif de la page courante vers la racine du blog, le chemin relatif vers la sous-categorie courante et le nom de la sous-categorie courante.
+* __BlogCategories__ : La liste des categories (branches complètes) du blog. Se présente sous la forme de listes imbriquées. Il y a plusieurs items disponibles pour une itération courante ; __{0[relativeOrigin]}__, __{0[categoryPath]}__ et __{0[item]}__. Respectivement le chemin relatif de la page courante vers la racine du blog, le chemin relatif vers la sous-categorie courante et le nom de la sous-categorie courante.
 
 Pour utiliser ces variables spéciales de motifs reportez vous à la partie [Motifs spéciaux](https://github.com/DenisSalem/VenC/blob/master/doc/FR.md#motifs-spéciaux)
 
